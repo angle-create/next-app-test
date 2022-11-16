@@ -10,7 +10,7 @@ export const InputTodoForm : React.FC = () => {
     e.preventDefault();
     await supabase.from('todos').insert({ title });
     feachTodos();
-    setTitle(();
+    setTitle('');
   }
 
   return (
