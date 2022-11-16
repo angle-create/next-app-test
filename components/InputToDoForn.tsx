@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import { useAddTodo } from '../Hooks/useAddTodo';
+import { useAddTodo } from '../hooks/useAddTodo';
 import supabase from '../utils/supabase';
 
 export const InputTodoForm : React.FC = () => {
