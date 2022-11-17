@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAddTodo } from "../hooks/useAddTodo";
+import { useAddTodo } from "../Hooks/useAddTodo";
 
 export const TodoList : React.FC = () => {
   const {todos} = useAddTodo()
@@ -7,7 +7,7 @@ export const TodoList : React.FC = () => {
   return (
     <>
       <div>todoリスト</div>
-      {todos.map((todo) => (
+      {todos?.map((todo) => (
         <li key={todo.id}>{todo.title}</li>
       ))}
     </>
