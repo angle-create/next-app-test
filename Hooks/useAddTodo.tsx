@@ -6,7 +6,7 @@ export const useAddTodo = () => {
 
   useEffect(() => {
     feachTodos()
-  }, [])
+  }, [todos])
 
   const feachTodos = async () => {
     const datas : any = await supabase.from('todos').select('*');
