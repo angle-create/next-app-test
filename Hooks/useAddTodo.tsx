@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import supabase from "../utils/supabase";
 
 export const useAddTodo = () => {
-  const [todos, setTodo] = useState([]);
+  const [todos, setTodo] = useState();
 
   useEffect(() => {
     feachTodos()
